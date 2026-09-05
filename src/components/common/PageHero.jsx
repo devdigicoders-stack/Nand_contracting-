@@ -15,7 +15,7 @@ const PageHero = ({ eyebrow, title, highlight, description, backgroundImage, bre
         <div className="absolute inset-0 bg-gradient-to-r from-nand-navy/95 via-nand-navy/80 to-transparent"></div>
       </div>
 
-      <div className="relative z-10 w-full max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 py-16 mt-8">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20 py-16 mt-8">
         
         {/* Breadcrumb */}
         {breadcrumbLabel && (

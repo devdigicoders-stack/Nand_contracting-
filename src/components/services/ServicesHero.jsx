@@ -3,7 +3,7 @@ import { FiArrowDown } from 'react-icons/fi';
 
 const ServicesHero = () => {
   return (
-    <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+    <section className="relative h-auto min-h-[100svh] lg:min-h-[60vh] py-24 lg:py-24 flex items-center justify-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <img 

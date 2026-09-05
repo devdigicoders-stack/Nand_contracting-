@@ -58,11 +58,11 @@ const CoreServices = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-white">
-      <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-10 md:py-16 bg-white">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="text-nand-orange font-bold text-sm tracking-widest uppercase mb-3 block">
             What We Do
           </span>
@@ -73,7 +73,7 @@ const CoreServices = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
           {services.map((service, index) => {
             const isBlue = service.color === 'blue';
             return (

@@ -33,7 +33,7 @@ const ContactFAQ = () => {
 
   return (
     <section className="py-16 md:py-20 lg:py-24 bg-white">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
         
         <div className="text-center mb-12">
           <span className="inline-block uppercase tracking-[0.18em] text-sm font-semibold text-nand-orange mb-4">

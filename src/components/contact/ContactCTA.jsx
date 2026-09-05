@@ -17,7 +17,7 @@ const ContactCTA = () => {
         <div className="absolute right-0 top-0 w-1/2 h-full bg-nand-blue/10 blur-3xl transform translate-x-1/4 -translate-y-1/4 pointer-events-none"></div>
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 xl:px-20 text-center">
         
         <span className="inline-block uppercase tracking-[0.18em] text-sm font-semibold text-nand-orange mb-4">
           Let's Work Together

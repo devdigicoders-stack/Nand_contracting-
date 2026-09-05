@@ -17,7 +17,7 @@ const ManpowerHero = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-[#071B2D]/95 via-[#071B2D]/80 to-[#0798E8]/40 mix-blend-multiply"></div>
       </div>
 
-      <div className="relative z-10 w-full max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-0 mt-8">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20 py-16 md:py-0 mt-8">
         {/* Breadcrumb */}
         <div className="flex items-center space-x-2 text-sm text-gray-300 mb-8 font-medium">
           <HiOutlineHome className="w-4 h-4" />

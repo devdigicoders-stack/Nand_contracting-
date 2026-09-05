@@ -4,7 +4,7 @@ import { BiSolidQuoteAltLeft } from 'react-icons/bi';
 const Leadership = () => {
   return (
     <section className="py-16 md:py-24 bg-nand-navy overflow-hidden">
-      <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
         
         <div className="text-center mb-16">
           <span className="text-nand-orange font-bold text-sm tracking-widest uppercase mb-3 block">

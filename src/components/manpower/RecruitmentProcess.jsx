@@ -17,7 +17,7 @@ const RecruitmentProcess = () => {
       {/* Background abstract shape */}
       <div className="absolute top-0 right-0 w-1/3 h-1/2 bg-slate-50 rounded-bl-[100px] -z-0"></div>
 
-      <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20 relative z-10">
         
         <div className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
           <span className="inline-block uppercase tracking-[0.18em] text-sm font-semibold text-nand-orange mb-4">

@@ -17,7 +17,7 @@ const FinishingPackages = () => {
       {/* Decorative Blur */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-nand-blue/10 rounded-full blur-3xl pointer-events-none"></div>
 
-      <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20 relative z-10">
         
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block uppercase tracking-[0.18em] text-sm font-semibold text-nand-orange mb-4">

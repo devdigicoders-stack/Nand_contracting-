@@ -9,27 +9,33 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-nand-navy text-slate-300">
-      <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+    <footer className="bg-nand-navy text-slate-300 border-t border-white/5 relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-nand-orange via-[#FFB067] to-transparent opacity-80"></div>
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20 py-12 sm:py-16 lg:py-20">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-8">
           
           {/* COLUMN 01 — COMPANY */}
-          <div className="lg:col-span-1">
-            <Link to="/" className="inline-block mb-6  p-3 rounded-lg ">
-              <img src="/footer_logo.png" alt="NAND Contracting & Hospitality Services" className="h-18 w-auto object-contain" />
+          <div className="col-span-2 lg:col-span-1 flex flex-col items-center sm:items-start text-center sm:text-left border-b border-white/5 lg:border-none pb-8 lg:pb-0">
+            <Link to="/" className="inline-block mb-6 hover:opacity-90 transition-opacity">
+              <img src="/footer_logo.png" alt="NAND Contracting & Hospitality Services" className="h-16 sm:h-20 w-auto object-contain" />
             </Link>
-            <p className="text-sm leading-relaxed mb-6 text-slate-400">
+            <p className="text-sm leading-relaxed mb-6 text-slate-400 max-w-sm">
               Integrated contracting, maintenance, renovation, hospitality and manpower solutions for requirements across Qatar.
             </p>
-            <p className="text-sm font-semibold text-white">
-              Building Trust. <br className="hidden lg:block"/> Maintaining Excellence.
-            </p>
+            <div className="bg-nand-orange/10 border border-nand-orange/20 px-4 py-2 rounded-lg inline-block">
+              <p className="text-sm font-semibold text-white">
+                Building Trust. <span className="text-nand-orange">Maintaining Excellence.</span>
+              </p>
+            </div>
           </div>
 
           {/* COLUMN 02 — QUICK LINKS */}
-          <div>
-            <h4 className="text-white font-bold mb-6 tracking-wide uppercase text-sm">Quick Links</h4>
-            <ul className="space-y-3 text-sm">
+          <div className="col-span-2 lg:col-span-1 flex flex-col items-center sm:items-start text-center sm:text-left pt-6 lg:pt-0 border-t border-white/5 lg:border-none">
+            <h4 className="text-white font-bold mb-5 tracking-wide uppercase text-xs sm:text-sm flex flex-col items-center sm:items-start">
+              Quick Links
+              <span className="w-8 h-0.5 bg-nand-orange mt-2 rounded-full"></span>
+            </h4>
+            <ul className="space-y-3 text-xs sm:text-sm flex flex-col items-center sm:items-start">
               <li><Link to="/" className="hover:text-nand-orange transition-colors">Home</Link></li>
               <li><Link to="/about" className="hover:text-nand-orange transition-colors">About Us</Link></li>
               <li><Link to="/projects" className="hover:text-nand-orange transition-colors">Projects & Gallery</Link></li>
@@ -38,9 +44,12 @@ const Footer = () => {
           </div>
 
           {/* COLUMN 03 — SERVICES */}
-          <div>
-            <h4 className="text-white font-bold mb-6 tracking-wide uppercase text-sm">Services</h4>
-            <ul className="space-y-3 text-sm">
+          <div className="col-span-2 lg:col-span-1 flex flex-col items-center sm:items-start text-center sm:text-left pt-6 lg:pt-0 border-t border-white/5 lg:border-none">
+            <h4 className="text-white font-bold mb-5 tracking-wide uppercase text-xs sm:text-sm flex flex-col items-center sm:items-start">
+              Services
+              <span className="w-8 h-0.5 bg-nand-orange mt-2 rounded-full"></span>
+            </h4>
+            <ul className="space-y-3 text-xs sm:text-sm flex flex-col items-center sm:items-start">
               <li><Link to="/contracting" className="hover:text-nand-orange transition-colors">Contracting</Link></li>
               <li><Link to="/contracting#facility-maintenance" className="hover:text-nand-orange transition-colors">Facility Maintenance</Link></li>
               <li><Link to="/contracting#technical-maintenance" className="hover:text-nand-orange transition-colors">Technical Maintenance</Link></li>
@@ -51,33 +60,36 @@ const Footer = () => {
           </div>
 
           {/* COLUMN 04 — CONTACT */}
-          <div>
-            <h4 className="text-white font-bold mb-6 tracking-wide uppercase text-sm">Contact</h4>
-            <ul className="space-y-4 text-sm">
+          <div className="col-span-2 lg:col-span-1 pt-6 lg:pt-0 border-t border-white/5 lg:border-none flex flex-col items-center sm:items-start text-center sm:text-left">
+            <h4 className="text-white font-bold mb-5 tracking-wide uppercase text-xs sm:text-sm flex flex-col items-center sm:items-start">
+              Contact
+              <span className="w-8 h-0.5 bg-nand-orange mt-2 rounded-full"></span>
+            </h4>
+            <ul className="space-y-4 text-sm flex flex-col items-center sm:items-start w-full">
               <li>
-                <a href={`tel:${contactInfo.phone}`} className="flex items-start hover:text-white transition-colors group">
-                  <FiPhone className="w-5 h-5 text-nand-orange mr-3 flex-shrink-0 group-hover:scale-110 transition-transform" />
+                <a href={`tel:${contactInfo.phone}`} className="flex flex-col sm:flex-row items-center sm:items-start hover:text-white transition-colors group text-center sm:text-left">
+                  <FiPhone className="w-5 h-5 text-nand-orange mb-1 sm:mb-0 sm:mr-3 flex-shrink-0 group-hover:scale-110 transition-transform" />
                   <span>{contactInfo.phone}</span>
                 </a>
               </li>
               <li>
-                <a href={`https://wa.me/974${contactInfo.whatsapp}`} target="_blank" rel="noopener noreferrer" className="flex items-start hover:text-white transition-colors group">
-                  <FaWhatsapp className="w-5 h-5 text-[#25D366] mr-3 flex-shrink-0 group-hover:scale-110 transition-transform" />
+                <a href={`https://wa.me/974${contactInfo.whatsapp}`} target="_blank" rel="noopener noreferrer" className="flex flex-col sm:flex-row items-center sm:items-start hover:text-white transition-colors group text-center sm:text-left">
+                  <FaWhatsapp className="w-5 h-5 text-[#25D366] mb-1 sm:mb-0 sm:mr-3 flex-shrink-0 group-hover:scale-110 transition-transform" />
                   <span>{contactInfo.whatsapp}</span>
                 </a>
               </li>
               <li>
-                <a href={`mailto:${contactInfo.email}`} className="flex items-start hover:text-white transition-colors group">
-                  <FiMail className="w-5 h-5 text-nand-orange mr-3 flex-shrink-0 group-hover:scale-110 transition-transform" />
+                <a href={`mailto:${contactInfo.email}`} className="flex flex-col sm:flex-row items-center sm:items-start hover:text-white transition-colors group text-center sm:text-left">
+                  <FiMail className="w-5 h-5 text-nand-orange mb-1 sm:mb-0 sm:mr-3 flex-shrink-0 group-hover:scale-110 transition-transform" />
                   <span>{contactInfo.email}</span>
                 </a>
               </li>
               <li>
-                <div className="flex items-start group cursor-default">
-                  <HiOutlineMapPin className="w-6 h-6 text-nand-orange mr-3 flex-shrink-0" />
+                <div className="flex flex-col sm:flex-row items-center sm:items-start group cursor-default text-center sm:text-left">
+                  <HiOutlineMapPin className="w-6 h-6 text-nand-orange mb-2 sm:mb-0 sm:mr-3 flex-shrink-0" />
                   <span className="leading-relaxed">
-                    {contactInfo.address.floor}, {contactInfo.address.office},<br />
-                    {contactInfo.address.building}, {contactInfo.address.road},<br />
+                    {contactInfo.address.floor}, {contactInfo.address.office},<br className="hidden sm:block" />
+                    {contactInfo.address.building}, {contactInfo.address.road},<br className="hidden sm:block" />
                     {contactInfo.address.city} - {contactInfo.address.country}
                   </span>
                 </div>
@@ -90,7 +102,7 @@ const Footer = () => {
 
       {/* FOOTER BOTTOM */}
       <div className="border-t border-slate-800 bg-[#04101A]">
-        <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
             <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 text-center md:text-left">
               <p>© {currentYear} NAND Contracting & Hospitality Services. All Rights Reserved.</p>

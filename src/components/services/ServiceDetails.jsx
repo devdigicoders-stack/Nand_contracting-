@@ -4,6 +4,17 @@ import { BsCheck2 } from 'react-icons/bs';
 const ServiceDetails = () => {
   const servicesData = [
     {
+      num: '01',
+      title: 'Manpower Outsourcing & Staffing',
+      desc: 'Skilled workforce and general labor supply tailored to your operational needs. We provide flexible manpower solutions that support a wide range of industries including construction, facility management, logistics, and hospitality.',
+      subtext: 'Our objective is to deliver reliable and qualified personnel that integrate seamlessly into your projects and daily operations, ensuring efficiency and operational continuity.',
+      list: [
+        'Construction Labour Supply', 'Hospitality & Event Staffing', 'Facility Support Personnel', 
+        'Drivers & Logistics Staff', 'Warehouse Operatives', 'Temporary & Contract Staff', 
+        'Skilled Technicians', 'General Helpers & Cleaners'
+      ]
+    },
+    {
       num: '02',
       title: 'Facility and Building Maintenance',
       desc: 'Effective maintenance protects property value, improves functionality and helps minimize unexpected disruptions. Our facility and building maintenance services are designed to support residential, commercial and property-sector requirements.',
@@ -85,7 +96,7 @@ const ServiceDetails = () => {
 
   return (
     <section className="py-16 md:py-24 bg-nand-light">
-      <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 space-y-16 lg:space-y-24">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20 space-y-16 lg:space-y-24">
         {servicesData.map((service, index) => {
           const isEven = index % 2 === 0;
           return (

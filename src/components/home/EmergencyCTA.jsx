@@ -14,7 +14,7 @@ const EmergencyCTA = () => {
         />
       </div>
       
-      <div className="relative z-10 max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
           
           <div className="max-w-2xl text-center lg:text-left">

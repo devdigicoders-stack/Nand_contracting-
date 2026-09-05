@@ -16,7 +16,7 @@ const RenovationCTA = () => {
         <div className="absolute inset-0 bg-nand-navy/90 mix-blend-multiply"></div>
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 xl:px-20 text-center">
         
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-6 leading-tight">
           Planning a Renovation <br className="hidden sm:block"/> or Fit-Out Project?
@@ -26,21 +26,21 @@ const RenovationCTA = () => {
           Discuss your villa, apartment, office or commercial renovation requirements with NAND and let our team understand your scope.
         </p>
         
-        <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4">
+        <div className="flex flex-row justify-center gap-3 sm:gap-4">
           <Link 
             to="/contact" 
-            className="inline-flex items-center justify-center px-6 py-3 text-base bg-nand-orange text-white font-bold rounded-md hover:bg-[#e66d00] transition-colors shadow-lg w-full sm:w-auto"
+            className="inline-flex items-center justify-center px-4 sm:px-6 py-2.5 sm:py-3 text-xs sm:text-base bg-nand-orange text-white font-bold rounded-md hover:bg-[#e66d00] transition-colors shadow-lg whitespace-nowrap"
           >
-            Request Renovation Quote
-            <FiArrowUpRight className="ml-2 w-5 h-5" />
+            Request Quote
+            <FiArrowUpRight className="ml-1.5 sm:ml-2 w-4 h-4 sm:w-5 sm:h-5" />
           </Link>
           <a 
             href="https://wa.me/97431171127" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-6 py-3 text-base bg-[#25D366] text-white font-bold rounded-md hover:bg-[#20bd5a] transition-colors shadow-lg w-full sm:w-auto"
+            className="inline-flex items-center justify-center px-4 sm:px-6 py-2.5 sm:py-3 text-xs sm:text-base bg-[#25D366] text-white font-bold rounded-md hover:bg-[#20bd5a] transition-colors shadow-lg whitespace-nowrap"
           >
-            <FaWhatsapp className="mr-2 w-5 h-5" />
+            <FaWhatsapp className="mr-1.5 sm:mr-2 w-4 h-4 sm:w-5 sm:h-5" />
             WhatsApp Us
           </a>
         </div>

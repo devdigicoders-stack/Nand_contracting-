@@ -23,7 +23,7 @@ const RenovationNavigation = () => {
 
   return (
     <div id="renovation-nav" className="bg-slate-50 border-y border-slate-200 sticky top-16 z-40 hidden md:block shadow-sm overflow-hidden">
-      <div className="max-w-[1536px] mx-auto overflow-hidden relative">
+      <div className="max-w-[1440px] mx-auto overflow-hidden relative">
         <div className="animate-marquee hover:pause flex items-center py-4">
           {[...links, ...links].map((link, index) => (
             <button

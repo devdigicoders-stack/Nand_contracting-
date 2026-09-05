@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const ProjectsHero = () => {
   return (
-    <section className="relative h-auto min-h-[450px] lg:h-[65vh] flex flex-col justify-center overflow-hidden bg-nand-navy">
+    <section className="relative h-auto min-h-[100svh] lg:min-h-[65vh] py-20 lg:py-24 flex flex-col justify-center overflow-hidden bg-nand-navy">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -17,16 +17,16 @@ const ProjectsHero = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-[#071B2D]/95 via-[#071B2D]/80 to-transparent mix-blend-multiply"></div>
       </div>
 
-      <div className="relative z-10 w-full max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-0 mt-8">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20 py-12 lg:py-0 mt-8">
         {/* Breadcrumb */}
-        <div className="flex items-center space-x-2 text-sm text-gray-300 mb-8 font-medium">
+        <div className="flex items-center justify-center md:justify-start space-x-2 text-sm text-gray-300 mb-8 font-medium w-full">
           <HiOutlineHome className="w-4 h-4" />
           <Link to="/" className="hover:text-white transition-colors">Home</Link>
           <span>/</span>
           <span className="text-white">Projects & Gallery</span>
         </div>
 
-        <div className="max-w-3xl">
+        <div className="max-w-3xl text-center md:text-left mx-auto md:mx-0 flex flex-col items-center md:items-start">
           {/* Eyebrow */}
           <span className="inline-block uppercase tracking-[0.18em] text-sm font-semibold text-nand-orange mb-4">
             Our Work
@@ -49,7 +49,7 @@ const ProjectsHero = () => {
           </p>
           
           {/* CTAs */}
-          <div className="flex flex-row flex-wrap gap-3">
+          <div className="flex flex-row flex-wrap justify-center md:justify-start gap-3 w-full">
             <button 
               onClick={() => {
                 const inquiry = document.getElementById('project-inquiry');

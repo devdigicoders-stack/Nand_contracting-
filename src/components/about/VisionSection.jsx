@@ -7,7 +7,7 @@ const VisionSection = () => {
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-nand-blue/10 rounded-full blur-3xl transform translate-x-1/3 -translate-y-1/3"></div>
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-nand-orange/5 rounded-full blur-3xl transform -translate-x-1/3 translate-y-1/3"></div>
       
-      <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex justify-center text-center">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20 relative z-10 flex justify-center text-center">
         
         <div className="max-w-4xl">
           <span className="badge-premium mx-auto mb-6">

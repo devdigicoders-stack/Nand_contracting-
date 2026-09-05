@@ -55,7 +55,7 @@ const ProjectsCTA = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-nand-navy/95 via-nand-navy/80 to-[#0798E8]/40"></div>
       </div>
 
-      <div className="relative z-10 max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
           {/* LEFT: CTA Text */}

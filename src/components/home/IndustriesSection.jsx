@@ -16,7 +16,7 @@ const IndustriesSection = () => {
 
   return (
     <section className="py-16 md:py-24 bg-nand-light">
-      <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20 text-center">
         
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-nand-navy mb-12">
           Supporting Diverse Operational Requirements

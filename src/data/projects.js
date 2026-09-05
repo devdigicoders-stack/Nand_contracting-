@@ -52,8 +52,8 @@ export const projects = [
     description: 'Structural and aesthetic improvements designed to upgrade commercial properties.',
     scope: [],
     featured: false,
-    beforeImage: '/NAND_Website_Image_Collection/hero/doha-skyline.jpg', // Placeholder bare room
-    afterImage: '/NAND_Website_Image_Collection/hero/doha-skyline.jpg' // Placeholder finished room
+    beforeImage: '/NAND_Website_Image_Collection/projects/renovation-after.jpg',
+    afterImage: '/NAND_Website_Image_Collection/projects/renovation-before.jpg'
   },
   {
     id: 5,

@@ -4,7 +4,7 @@ import { HiOutlineBriefcase } from 'react-icons/hi2';
 const LeadershipSection = () => {
   return (
     <section className="py-16 md:py-20 lg:py-24 bg-slate-50">
-      <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
         
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block uppercase tracking-[0.18em] text-sm font-semibold text-nand-orange mb-4">
@@ -19,12 +19,12 @@ const LeadershipSection = () => {
           
           {/* Leader 01: Sumaya Akter */}
           <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col md:flex-row group hover:shadow-md transition-shadow">
-            <div className="w-full md:w-2/5 relative h-64 md:h-auto">
+            <div className="w-full md:w-2/5 relative h-[350px] md:h-auto">
               {/* Using placeholder as instructed */}
               <img 
                 src="/NAND_Website_Image_Collection/team/Sumaya_Akter_Founder_CEO.jpg" 
                 alt="Sumaya Akter - Founder & CEO" 
-                className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="w-full md:w-3/5 p-8 flex flex-col justify-center relative">
@@ -49,11 +49,11 @@ const LeadershipSection = () => {
 
           {/* Leader 02: Pragya Nand Rai */}
           <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col md:flex-row group hover:shadow-md transition-shadow">
-            <div className="w-full md:w-2/5 relative h-64 md:h-auto">
+            <div className="w-full md:w-2/5 relative h-[350px] md:h-auto">
               <img 
                 src="/NAND_Website_Image_Collection/team/Pragya_Nand_Rai_General_Manager.png" 
                 alt="Pragya Nand Rai - General Manager" 
-                className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="w-full md:w-3/5 p-8 flex flex-col justify-center relative">

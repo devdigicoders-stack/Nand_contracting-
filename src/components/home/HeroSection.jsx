@@ -6,7 +6,7 @@ import { MdOutlineSupportAgent } from 'react-icons/md';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[85vh] lg:min-h-[92vh] flex items-center">
+    <section className="relative h-auto min-h-[100svh] lg:min-h-[92vh] py-6 lg:py-24 flex items-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -15,12 +15,12 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-nand-navy/95 via-nand-navy/80 to-transparent"></div>
       </div>
 
-      <div className="relative z-10 w-full max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-0">
-        <div className="max-w-3xl pb-16 lg:pb-20 pt-8 lg:pt-12">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
+        <div className="max-w-3xl pb-8 lg:pb-20 pt-2 lg:pt-12 text-center md:text-left mx-auto md:mx-0 flex flex-col items-center md:items-start">
           {/* Eyebrow */}
-          <span className="badge-premium mb-6">
-            <span className="h-1.5 w-1.5 animate-pulse-glow rounded-full bg-current opacity-80"></span>
-            NAND Contracting & Hospitality Services
+          <span className="badge-premium mb-6 text-[10px] sm:text-xs md:text-sm whitespace-nowrap overflow-hidden text-ellipsis max-w-full">
+            <span className="h-1.5 w-1.5 animate-pulse-glow rounded-full bg-current opacity-80 flex-shrink-0"></span>
+            NAND Contracting & Hospitality
           </span>
           
           {/* Main Heading */}
@@ -40,44 +40,44 @@ const HeroSection = () => {
           </p>
           
           {/* CTAs */}
-          <div className="flex flex-row flex-wrap gap-3 mb-10 lg:mb-12">
+          <div className="flex flex-row flex-wrap justify-center md:justify-start gap-2 sm:gap-3 mb-10 lg:mb-12 w-full sm:w-auto px-2 sm:px-0">
             <Link 
               to="/contact" 
-              className="inline-flex items-center justify-center px-5 py-2.5 md:px-6 md:py-3 text-sm md:text-base bg-gradient-to-r from-nand-orange to-[#FFB067] text-white font-bold rounded-md shadow-lg shadow-nand-orange/30 hover:shadow-xl hover:shadow-nand-orange/40 hover:-translate-y-0.5 transition-all group flex-1 sm:flex-none"
+              className="inline-flex items-center justify-center px-3 py-2 sm:px-5 sm:py-3 text-[11px] sm:text-sm md:text-base bg-gradient-to-r from-nand-orange to-[#FFB067] text-white font-bold rounded-md shadow-lg shadow-nand-orange/30 hover:shadow-xl hover:shadow-nand-orange/40 hover:-translate-y-0.5 transition-all group"
             >
               Request a Quote
-              <FiArrowUpRight className="ml-2 w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+              <FiArrowUpRight className="ml-1 sm:ml-2 w-3 h-3 sm:w-5 sm:h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </Link>
             <Link 
               to="/services" 
-              className="inline-flex items-center justify-center px-5 py-2.5 md:px-6 md:py-3 text-sm md:text-base bg-transparent border border-white/40 text-white font-bold rounded-md hover:bg-white/10 hover:border-white shadow-sm transition-all group flex-1 sm:flex-none"
+              className="inline-flex items-center justify-center px-3 py-2 sm:px-5 sm:py-3 text-[11px] sm:text-sm md:text-base bg-transparent border border-white/40 text-white font-bold rounded-md hover:bg-white/10 hover:border-white shadow-sm transition-all group"
             >
-              Explore Our Services
-              <FiArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              Explore Services
+              <FiArrowRight className="ml-1 sm:ml-2 w-3 h-3 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
 
           {/* Bottom Highlights */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-white/20">
-            <div className="flex items-center text-white">
-              <HiOutlineBuildingOffice2 className="w-8 h-8 text-nand-orange mr-4 flex-shrink-0" />
+          <div className="grid grid-cols-3 gap-2 sm:gap-8 pt-6 sm:pt-8 w-full border-t border-white/10 md:border-transparent">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left text-white">
+              <HiOutlineBuildingOffice2 className="w-5 h-5 sm:w-8 sm:h-8 text-nand-orange mb-1 sm:mb-0 sm:mr-4 flex-shrink-0" />
               <div>
-                <span className="block text-xl font-bold font-heading">01</span>
-                <span className="text-sm text-gray-300 font-medium">Qatar-Focused Operations</span>
+                <span className="block text-sm sm:text-xl font-bold font-heading leading-tight">01</span>
+                <span className="text-[9px] sm:text-sm text-gray-300 font-medium leading-tight block mt-1">Qatar-Focused</span>
               </div>
             </div>
-            <div className="flex items-center text-white">
-              <HiOutlineWrenchScrewdriver className="w-8 h-8 text-nand-orange mr-4 flex-shrink-0" />
+            <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left text-white">
+              <HiOutlineWrenchScrewdriver className="w-5 h-5 sm:w-8 sm:h-8 text-nand-orange mb-1 sm:mb-0 sm:mr-4 flex-shrink-0" />
               <div>
-                <span className="block text-xl font-bold font-heading">02</span>
-                <span className="text-sm text-gray-300 font-medium">Integrated Service Solutions</span>
+                <span className="block text-sm sm:text-xl font-bold font-heading leading-tight">02</span>
+                <span className="text-[9px] sm:text-sm text-gray-300 font-medium leading-tight block mt-1">Integrated Services</span>
               </div>
             </div>
-            <div className="flex items-center text-white">
-              <MdOutlineSupportAgent className="w-8 h-8 text-nand-orange mr-4 flex-shrink-0" />
+            <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left text-white">
+              <MdOutlineSupportAgent className="w-5 h-5 sm:w-8 sm:h-8 text-nand-orange mb-1 sm:mb-0 sm:mr-4 flex-shrink-0" />
               <div>
-                <span className="block text-xl font-bold font-heading">03</span>
-                <span className="text-sm text-gray-300 font-medium">Responsive Support</span>
+                <span className="block text-sm sm:text-xl font-bold font-heading leading-tight">03</span>
+                <span className="text-[9px] sm:text-sm text-gray-300 font-medium leading-tight block mt-1">Responsive Support</span>
               </div>
             </div>
           </div>

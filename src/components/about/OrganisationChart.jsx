@@ -4,7 +4,7 @@ import { HiOutlineUser, HiOutlineUsers, HiOutlineBuildingOffice2, HiOutlineWrenc
 const OrganisationChart = () => {
   return (
     <section className="py-16 md:py-20 lg:py-24 bg-slate-50">
-      <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
         
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block uppercase tracking-[0.18em] text-sm font-semibold text-nand-orange mb-4">
@@ -18,9 +18,15 @@ const OrganisationChart = () => {
           </p>
         </div>
 
-        {/* Tree Layout Container */}
-        <div className="overflow-x-auto pb-10">
-          <div className="min-w-[900px] flex flex-col items-center">
+        {/* Tree Layout Frame */}
+        <div className="relative w-full max-w-6xl mx-auto">
+          {/* Mobile Swipe Hint */}
+          <div className="lg:hidden flex items-center justify-center mb-4 text-sm font-medium text-nand-orange bg-nand-orange/10 py-2 px-4 rounded-full w-max mx-auto border border-nand-orange/20 shadow-sm animate-pulse">
+            <span className="mr-2">👈</span> Swipe to explore chart <span className="ml-2">👉</span>
+          </div>
+
+          <div className="overflow-x-auto pb-10 bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-slate-100 p-6 md:p-12 w-full">
+            <div className="min-w-[1000px] flex flex-col items-center">
             
             {/* CEO */}
             <div className="flex flex-col items-center relative">
@@ -149,6 +155,7 @@ const OrganisationChart = () => {
 
             </div>
           </div>
+        </div>
         </div>
         
       </div>

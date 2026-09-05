@@ -6,7 +6,7 @@ import { contactInfo } from '../../data/contactInfo';
 const DirectContact = () => {
   return (
     <section className="py-16 bg-nand-navy">
-      <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-10">
           
           <div className="lg:max-w-xl">
@@ -21,16 +21,17 @@ const DirectContact = () => {
             </p>
           </div>
 
-          <div className="flex flex-row flex-wrap gap-3 lg:gap-6 lg:justify-end">
+          <div className="flex flex-col sm:flex-row flex-wrap w-full lg:w-auto gap-4 lg:gap-6 mt-8 lg:mt-0 justify-start lg:justify-end">
             <a 
               href={`tel:${contactInfo.phone}`}
-              className="flex items-center justify-center lg:justify-start px-6 py-4 bg-white/10 hover:bg-white/20 border border-white/20 text-white rounded-lg transition-all duration-300 group min-w-[200px]"
+              className="flex items-center p-5 bg-white/5 hover:bg-white/10 border border-white/10 text-white rounded-xl shadow-lg transition-all duration-300 group w-full sm:w-auto lg:min-w-[220px] relative overflow-hidden"
             >
-              <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+              <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-nand-orange"></div>
+              <div className="w-12 h-12 rounded-full bg-nand-orange/20 text-nand-orange flex items-center justify-center mr-4 group-hover:scale-110 transition-transform flex-shrink-0">
                 <FiPhoneCall className="w-5 h-5" />
               </div>
-              <div>
-                <span className="block text-xs uppercase tracking-wider text-white/60 font-semibold mb-0.5">Call NAND</span>
+              <div className="text-left">
+                <span className="block text-xs uppercase tracking-wider text-slate-400 font-semibold mb-1">Call NAND</span>
                 <span className="block font-bold text-lg">{contactInfo.phone}</span>
               </div>
             </a>
@@ -39,27 +40,29 @@ const DirectContact = () => {
               href={`https://wa.me/974${contactInfo.whatsapp}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center lg:justify-start px-6 py-4 bg-[#25D366]/10 hover:bg-[#25D366]/20 border border-[#25D366]/30 text-white rounded-lg transition-all duration-300 group min-w-[200px]"
+              className="flex items-center p-5 bg-white/5 hover:bg-white/10 border border-white/10 text-white rounded-xl shadow-lg transition-all duration-300 group w-full sm:w-auto lg:min-w-[220px] relative overflow-hidden"
             >
-              <div className="w-10 h-10 rounded-full bg-[#25D366]/20 text-[#25D366] flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
-                <FaWhatsapp className="w-5 h-5" />
+              <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[#25D366]"></div>
+              <div className="w-12 h-12 rounded-full bg-[#25D366]/20 text-[#25D366] flex items-center justify-center mr-4 group-hover:scale-110 transition-transform flex-shrink-0">
+                <FaWhatsapp className="w-6 h-6" />
               </div>
-              <div>
-                <span className="block text-xs uppercase tracking-wider text-white/60 font-semibold mb-0.5">WhatsApp</span>
+              <div className="text-left">
+                <span className="block text-xs uppercase tracking-wider text-slate-400 font-semibold mb-1">WhatsApp</span>
                 <span className="block font-bold text-lg">{contactInfo.whatsapp}</span>
               </div>
             </a>
 
             <a 
               href={`mailto:${contactInfo.email}`}
-              className="flex items-center justify-center lg:justify-start px-6 py-4 bg-white/10 hover:bg-white/20 border border-white/20 text-white rounded-lg transition-all duration-300 group min-w-[200px]"
+              className="flex items-center p-5 bg-white/5 hover:bg-white/10 border border-white/10 text-white rounded-xl shadow-lg transition-all duration-300 group w-full sm:w-auto lg:min-w-[220px] relative overflow-hidden"
             >
-              <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+              <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[#4AA6FF]"></div>
+              <div className="w-12 h-12 rounded-full bg-[#4AA6FF]/20 text-[#4AA6FF] flex items-center justify-center mr-4 group-hover:scale-110 transition-transform flex-shrink-0">
                 <FiMail className="w-5 h-5" />
               </div>
-              <div>
-                <span className="block text-xs uppercase tracking-wider text-white/60 font-semibold mb-0.5">Email</span>
-                <span className="block font-bold text-base truncate max-w-[150px]">{contactInfo.email}</span>
+              <div className="text-left">
+                <span className="block text-xs uppercase tracking-wider text-slate-400 font-semibold mb-1">Email</span>
+                <span className="block font-bold text-base sm:text-lg truncate max-w-[150px] sm:max-w-[200px]">{contactInfo.email}</span>
               </div>
             </a>
           </div>
