@@ -8,7 +8,7 @@ const NotFound = () => {
   }, []);
 
   return (
-    <div className="min-h-[70vh] flex flex-col items-center justify-center bg-white px-4 py-20 text-center">
+    <div className="min-h-[70vh] flex flex-col items-center justify-center bg-white px-4 py-10 sm:py-12 text-center">
       
       {/* 404 Graphic */}
       <div className="relative mb-8">

@@ -24,7 +24,7 @@ const TrustStrip = () => {
   ];
 
   return (
-    <div className="relative z-20 -mt-24 sm:-mt-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
+    <div className="relative z-20 mt-6 sm:mt-8 lg:mt-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
       <div className="bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 p-4 sm:p-6 md:p-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
           {items.map((item, index) => (

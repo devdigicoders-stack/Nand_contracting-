@@ -14,43 +14,59 @@ const WhyNand = () => {
   ];
 
   return (
-    <section className="py-16 md:py-20 lg:py-24 bg-white">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+    <section className="py-10 sm:py-12 lg:py-14 bg-white overflow-hidden">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-start">
           
-          {/* LEFT: Image */}
-          <div className="order-2 lg:order-1 relative rounded-2xl overflow-hidden shadow-xl border border-slate-100 lg:sticky lg:top-24">
-            <div className="absolute inset-0 bg-nand-navy/10"></div>
+          {/* LEFT: Image & Stats (5 cols) */}
+          <div className="order-2 lg:order-1 lg:col-span-5 relative rounded-2xl overflow-hidden shadow-xl border border-slate-100 lg:sticky lg:top-24 group">
             <img 
-              src="/NAND_Website_Image_Collection/hero/doha-skyline.jpg" 
-              alt="Why Choose Nand" 
-              className="w-full h-full object-cover aspect-[4/3] md:aspect-square"
+              src="/NAND_Website_Image_Collection/services/technical-maintenance-electrical.jpg" 
+              alt="Why Choose NAND Technical Maintenance" 
+              className="w-full h-full object-cover aspect-[4/3] lg:aspect-[3/4] group-hover:scale-105 transition-transform duration-500"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-nand-navy/90 via-nand-navy/30 to-transparent"></div>
             
-            {/* Decorative block */}
-            <div className="absolute bottom-0 right-0 bg-nand-orange p-6 md:p-8 w-2/3 md:w-1/2 rounded-tl-2xl">
-              <p className="text-white font-bold text-lg leading-tight">
+            {/* Overlay Banner */}
+            <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6 text-white">
+              <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-nand-orange text-white text-[11px] font-black uppercase tracking-wider mb-2 font-heading">
+                Operational Excellence
+              </div>
+              <h4 className="font-heading font-bold text-lg text-gray-200 sm:text-xl leading-snug">
                 Built for Reliable, Responsive Service Delivery
+              </h4>
+              <p className="text-xs text-slate-300 mt-1">
+                Single-point coordination for residential, commercial & hospitality assets in Qatar.
               </p>
             </div>
           </div>
 
-          {/* RIGHT: Feature Content */}
-          <div className="order-1 lg:order-2">
-            <span className="inline-block uppercase tracking-[0.18em] text-sm font-semibold text-nand-orange mb-4">
+          {/* RIGHT: Feature Content (7 cols) */}
+          <div className="order-1 lg:order-2 lg:col-span-7">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-nand-orange/10 border border-nand-orange/20 text-nand-orange text-xs font-bold uppercase tracking-wider mb-3">
               Why NAND
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-nand-navy mb-8">
-              Why Choose Us?
+            </div>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold tracking-tight text-nand-navy mb-4 leading-tight">
+              Why Choose Us as Your Service Partner?
             </h2>
+            <p className="text-sm sm:text-base text-slate-600 mb-6 leading-relaxed">
+              We combine multi-disciplinary contracting skills, licensed technicians and responsive customer care into one cohesive operational partner.
+            </p>
             
-            <div className="space-y-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-3.5">
               {reasons.map((reason, index) => (
-                <div key={index} className="flex items-start">
-                  <BsCheckCircleFill className="w-5 h-5 text-nand-blue mr-4 mt-1 flex-shrink-0" />
+                <div 
+                  key={index} 
+                  className="flex items-start gap-3 p-3 sm:p-3.5 rounded-xl bg-slate-50 hover:bg-blue-50/50 border border-slate-100 hover:border-nand-blue/30 transition-all duration-300 group"
+                >
+                  <BsCheckCircleFill className="w-4 h-4 text-nand-blue group-hover:text-nand-orange transition-colors mt-0.5 shrink-0" />
                   <div>
-                    <h3 className="text-lg font-bold text-nand-navy mb-1">{reason.title}</h3>
-                    <p className="text-slate-600 leading-relaxed text-sm md:text-base">{reason.desc}</p>
+                    <h3 className="text-xs sm:text-sm font-heading font-bold text-nand-navy group-hover:text-nand-blue transition-colors mb-0.5 leading-snug">
+                      {reason.title}
+                    </h3>
+                    <p className="text-[11px] sm:text-xs text-slate-600 leading-relaxed font-normal line-clamp-3">
+                      {reason.desc}
+                    </p>
                   </div>
                 </div>
               ))}

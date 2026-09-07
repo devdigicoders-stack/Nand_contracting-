@@ -10,7 +10,7 @@ const ManpowerCTA = () => {
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-nand-orange/10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-nand-blue/10 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
 
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 xl:px-20 text-center">
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 text-center">
         
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-6 leading-tight">
           Looking for a Reliable <br className="hidden sm:block"/> Workforce Partner in Qatar?

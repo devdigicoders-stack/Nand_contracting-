@@ -32,10 +32,10 @@ const RenovationTypes = () => {
   ];
 
   return (
-    <section id="renovation-types" className="py-16 md:py-20 lg:py-24 bg-white">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
+    <section id="renovation-types" className="py-10 sm:py-12 lg:py-14 bg-white">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
           <span className="badge-premium mb-4">
             <span className="h-1.5 w-1.5 animate-pulse-glow rounded-full bg-current opacity-80"></span>
             Renovation Services

@@ -4,51 +4,66 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 const EmergencyCTA = () => {
   return (
-    <section className="relative py-16 md:py-20 bg-nand-navy overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0 opacity-20 mix-blend-overlay">
-        <img 
-          src="/NAND_Website_Image_Collection/services/emergency-subcontracting-team.png" 
-          alt="Emergency Maintenance" 
-          className="w-full h-full object-cover"
-        />
-      </div>
+    <section className="relative py-8 sm:py-10 lg:py-12 bg-[#04101A] overflow-hidden">
+      {/* Background ambient lighting */}
+      <div className="absolute -top-24 -left-24 w-96 h-96 bg-red-600/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-nand-orange/10 rounded-full blur-3xl pointer-events-none"></div>
       
-      <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
-          
-          <div className="max-w-2xl text-center lg:text-left">
-            <span className="inline-block py-1 px-3 rounded bg-red-500/20 text-red-400 font-bold text-xs tracking-widest uppercase mb-4 border border-red-500/30">
-              Need Urgent Support?
-            </span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4 leading-tight">
-              Responsive Maintenance Support <br className="hidden md:block"/>
-              When Your Property Needs It
-            </h2>
-            <p className="text-gray-300 text-lg">
-              NAND provides emergency maintenance support for plumbing, electrical, AC/HVAC breakdowns, water leakage and general emergency repair requirements.
-            </p>
-          </div>
-          
-          <div className="flex flex-row flex-wrap gap-3 flex-shrink-0">
-            <a 
-              href="tel:31175515" 
-              className="inline-flex items-center justify-center px-5 py-2.5 md:px-6 md:py-3 text-sm md:text-base bg-white text-nand-navy text-base font-bold rounded-md hover:bg-gray-100 transition-colors shadow-lg"
-            >
-              <FiPhoneCall className="mr-3 w-5 h-5 text-nand-orange" />
-              Call for Support
-            </a>
-            <a 
-              href="https://wa.me/97431171127" 
-              target="_blank" 
-              rel="noreferrer"
-              className="inline-flex items-center justify-center px-5 py-2.5 md:px-6 md:py-3 text-sm md:text-base bg-[#25D366] text-white text-base font-bold rounded-md hover:bg-[#128C7E] transition-colors shadow-lg"
-            >
-              <FaWhatsapp className="mr-3 w-6 h-6" />
-              WhatsApp Us
-            </a>
-          </div>
+      <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+        <div className="bg-gradient-to-r from-white/[0.05] to-white/[0.02] border border-white/10 rounded-3xl p-6 sm:p-8 lg:p-10 backdrop-blur-xl shadow-2xl">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
+            
+            <div className="max-w-2xl text-center lg:text-left">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-500/15 border border-red-500/30 text-red-400 font-bold text-xs tracking-wider uppercase mb-3">
+                <span className="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+                24/7 Rapid Response in Qatar
+              </div>
 
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold font-heading text-white mb-3 leading-tight">
+                Immediate Maintenance Support <span className="text-gradient-gold">When Property Needs It</span>
+              </h2>
+
+              <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-5">
+                On-call technicians ready for fast dispatch across Doha for electrical emergencies, AC breakdowns, major plumbing failures, and urgent structural repairs.
+              </p>
+
+              {/* Emergency issue tags */}
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2">
+                <span className="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-semibold text-slate-300">
+                  ⚡ Electrical Failure
+                </span>
+                <span className="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-semibold text-slate-300">
+                  ❄️ AC / HVAC Breakdown
+                </span>
+                <span className="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-semibold text-slate-300">
+                  💧 Major Water Leakage
+                </span>
+                <span className="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-semibold text-slate-300">
+                  🔧 Plumbing Blockage
+                </span>
+              </div>
+            </div>
+            
+            <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto shrink-0 justify-center">
+              <a 
+                href="tel:31175515" 
+                className="inline-flex items-center justify-center px-6 py-3.5 text-xs sm:text-sm md:text-base font-bold bg-white hover:bg-slate-100 text-nand-navy rounded-xl shadow-lg transition-all duration-300 hover:scale-105"
+              >
+                <FiPhoneCall className="mr-2.5 w-4 h-4 text-nand-orange" />
+                Call: 31175515
+              </a>
+              <a 
+                href="https://wa.me/97431171127" 
+                target="_blank" 
+                rel="noreferrer" 
+                className="inline-flex items-center justify-center px-6 py-3.5 text-xs sm:text-sm md:text-base font-bold bg-[#25D366] hover:bg-[#128C7E] text-white rounded-xl shadow-lg transition-all duration-300 hover:scale-105"
+              >
+                <FaWhatsapp className="mr-2.5 w-5 h-5" />
+                WhatsApp: 31171127
+              </a>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>

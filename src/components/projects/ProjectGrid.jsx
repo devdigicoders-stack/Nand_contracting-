@@ -23,8 +23,8 @@ const ProjectGrid = () => {
     : projects.filter(p => p.category === activeFilter);
 
   return (
-    <section id="project-gallery" className="py-16 md:py-20 lg:py-24 bg-white">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
+    <section id="project-gallery" className="py-10 sm:py-12 lg:py-14 bg-white">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         
         {/* Gallery Header */}
         <div className="text-center mb-10">
@@ -34,7 +34,7 @@ const ProjectGrid = () => {
         </div>
 
         {/* Filters */}
-        <div className="mb-12">
+        <div className="mb-6 sm:mb-8">
           <div className="flex items-center justify-start md:justify-center mb-4 text-slate-500 font-medium">
             <FiFilter className="mr-2 w-4 h-4" />
             <span className="text-sm uppercase tracking-wider">Filter by Category</span>
@@ -104,7 +104,7 @@ const ProjectGrid = () => {
           </div>
         ) : (
           /* Empty State */
-          <div className="text-center py-20 bg-slate-50 rounded-2xl border border-slate-200">
+          <div className="text-center py-10 sm:py-12 bg-slate-50 rounded-2xl border border-slate-200">
             <h3 className="text-2xl font-bold text-nand-navy mb-3">Project Gallery Coming Soon</h3>
             <p className="text-slate-600 max-w-lg mx-auto mb-8">
               We are currently updating our portfolio with selected project imagery to showcase our contracting and maintenance capabilities in this category.

@@ -114,10 +114,10 @@ const BeforeAfterSection = () => {
   const project = beforeAfterProjects[0];
 
   return (
-    <section className="py-16 md:py-20 lg:py-24 bg-slate-50 border-y border-slate-200">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
+    <section className="py-10 sm:py-12 lg:py-14 bg-slate-50 border-y border-slate-200">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
           <span className="inline-block uppercase tracking-[0.18em] text-sm font-semibold text-nand-orange mb-4">
             Transformation
           </span>

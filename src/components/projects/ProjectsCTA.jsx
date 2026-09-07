@@ -44,7 +44,7 @@ const ProjectsCTA = () => {
   };
 
   return (
-    <section id="project-inquiry" className="relative py-16 md:py-24 bg-nand-navy overflow-hidden">
+    <section id="project-inquiry" className="relative py-10 sm:py-12 lg:py-14 bg-nand-navy overflow-hidden">
       {/* Background with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -55,7 +55,7 @@ const ProjectsCTA = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-nand-navy/95 via-nand-navy/80 to-[#0798E8]/40"></div>
       </div>
 
-      <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
+      <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
           {/* LEFT: CTA Text */}

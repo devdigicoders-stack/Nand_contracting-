@@ -36,14 +36,14 @@ const CoreValues = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-white">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20 text-center">
+    <section className="py-10 sm:py-12 lg:py-14 bg-white">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 text-center">
         
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-nand-navy mb-4">
           We aspire to build a service <br className="hidden md:block"/> organization known for:
         </h2>
         
-        <p className="text-nand-orange font-bold text-lg max-w-2xl mx-auto mb-16">
+        <p className="text-nand-orange font-bold text-lg max-w-2xl mx-auto mb-8 sm:mb-10">
           Our focus is simple: deliver the right solution, with the right level of professionalism, at the right time.
         </p>
 

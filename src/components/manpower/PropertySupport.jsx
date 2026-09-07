@@ -15,9 +15,9 @@ const PropertySupport = () => {
 
   return (
     <section className="py-10 md:py-12 lg:py-16 bg-white">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         
-        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-6 sm:mb-8">
           <span className="inline-block uppercase tracking-[0.18em] text-sm font-semibold text-nand-orange mb-4">
             Property Support
           </span>

@@ -3,18 +3,18 @@ import { HiOutlineUser, HiOutlineUsers, HiOutlineBuildingOffice2, HiOutlineWrenc
 
 const OrganisationChart = () => {
   return (
-    <section className="py-16 md:py-20 lg:py-24 bg-slate-50">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
+    <section className="py-10 sm:py-12 lg:py-14 bg-slate-50 border-y border-slate-100">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block uppercase tracking-[0.18em] text-sm font-semibold text-nand-orange mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-nand-orange/10 border border-nand-orange/20 text-nand-orange text-xs font-bold uppercase tracking-wider mb-3">
             Our Organisation
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-nand-navy mb-6">
+          </div>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold tracking-tight text-nand-navy mb-3 leading-tight">
             A Structure Built for Accountability
           </h2>
-          <p className="text-base lg:text-lg leading-7 text-slate-600">
-            NAND operates through a defined organizational structure designed to ensure accountability across client and worker interaction, with operations, HR, PRO and accounts functions coordinating closely for seamless service delivery.
+          <p className="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
+            NAND operates through a defined organizational structure designed to ensure accountability across client interaction, operations, PRO, safety and accounts.
           </p>
         </div>
 
@@ -34,7 +34,7 @@ const OrganisationChart = () => {
                 <div className="mx-auto w-14 h-14 mb-2 rounded-full overflow-hidden border-2 border-nand-orange shadow-inner bg-white">
                   <img src="/NAND_Website_Image_Collection/team/Sumaya_Akter_Founder_CEO.jpg" alt="Sumaya Akter" className="w-full h-full object-cover object-top" />
                 </div>
-                <h3 className="font-bold text-lg mb-1">Sumaya Akter</h3>
+                <h3 className="font-bold text-lg mb-1 text-white">Sumaya Akter</h3>
                 <p className="text-sm text-blue-100 font-medium">Founder & CEO</p>
               </div>
               <div className="w-0.5 h-8 bg-slate-300"></div>
@@ -46,7 +46,7 @@ const OrganisationChart = () => {
                 <div className="mx-auto w-14 h-14 mb-2 rounded-full overflow-hidden border-2 border-white shadow-inner bg-white">
                   <img src="/NAND_Website_Image_Collection/team/Pragya_Nand_Rai_General_Manager.png" alt="Pragya Nand Rai" className="w-full h-full object-cover object-top" />
                 </div>
-                <h3 className="font-bold text-lg mb-1">Pragya Nand Rai</h3>
+                <h3 className="font-bold text-lg mb-1 text-white">Pragya Nand Rai</h3>
                 <p className="text-sm text-blue-100 font-medium">General Manager</p>
               </div>
               <div className="w-0.5 h-10 bg-slate-300"></div>

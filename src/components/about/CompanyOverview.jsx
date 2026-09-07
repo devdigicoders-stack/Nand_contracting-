@@ -11,39 +11,42 @@ const CompanyOverview = () => {
   ];
 
   return (
-    <section className="py-16 md:py-20 lg:py-24 bg-white overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section className="py-10 sm:py-12 lg:py-14 bg-white overflow-hidden">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           
           {/* LEFT: Image Composition */}
           <div className="relative">
             {/* Main large image */}
-            <div className="rounded-xl overflow-hidden shadow-xl border border-slate-100">
+            <div className="rounded-2xl overflow-hidden shadow-xl border border-slate-100 group">
               <img 
-                src="/NAND_Website_Image_Collection/hero/doha-skyline.jpg" 
-                alt="Construction and Maintenance" 
-                className="w-full h-auto object-cover aspect-[4/5] md:aspect-[3/4]"
+                src="/NAND_Website_Image_Collection/hero/why-choose-nand-leadership.jpg" 
+                alt="NAND Contracting and Operations Team" 
+                className="w-full h-auto object-cover aspect-[4/3] group-hover:scale-105 transition-transform duration-500"
               />
             </div>
-            {/* Smaller overlapping image */}
-            <div className="absolute -bottom-10 -right-6 md:-right-10 w-2/3 max-w-[300px] rounded-xl overflow-hidden shadow-2xl border-4 border-white">
+            {/* Smaller overlapping image / badge */}
+            <div className="absolute -bottom-6 -right-4 sm:-right-6 w-1/2 max-w-[240px] rounded-xl overflow-hidden shadow-2xl border-4 border-white">
               <img 
-                src="/NAND_Website_Image_Collection/graphics/mission-growth-graphic.jpg" 
-                alt="Doha Skyline" 
-                className="w-full h-auto object-cover aspect-square"
+                src="/NAND_Website_Image_Collection/hospitality/hospitality-property-lobby.png" 
+                alt="Hospitality and Corporate Property" 
+                className="w-full h-auto object-cover aspect-[4/3]"
               />
             </div>
-            {/* Decorative element */}
-            <div className="absolute top-10 -left-6 w-24 h-24 bg-nand-orange/10 rounded-full blur-2xl -z-10"></div>
+            {/* Floating Trust Chip */}
+            <div className="absolute -top-4 left-4 sm:left-6 bg-nand-navy text-white px-3.5 py-1.5 rounded-lg shadow-lg text-xs font-bold font-heading border border-white/15 flex items-center gap-1.5">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              Qatar Operations Excellence
+            </div>
           </div>
 
           {/* RIGHT: Content */}
-          <div className="lg:pl-8 mt-12 lg:mt-0">
-            <span className="uppercase tracking-[0.18em] text-sm font-semibold text-nand-orange mb-4 block">
+          <div className="lg:pl-4 mt-8 lg:mt-0">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-nand-orange/10 border border-nand-orange/20 text-nand-orange text-xs font-bold uppercase tracking-wider mb-3">
               Who We Are
-            </span>
+            </div>
             
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-nand-navy mb-8 leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold tracking-tight text-nand-navy mb-5 sm:mb-6 leading-tight">
               A Reliable Service Partner for Properties, Facilities & Workforce
             </h2>
             

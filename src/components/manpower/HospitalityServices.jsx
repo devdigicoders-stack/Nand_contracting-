@@ -20,9 +20,9 @@ const HospitalityServices = () => {
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-nand-orange/5 rounded-full blur-3xl transform -translate-x-1/3 translate-y-1/3"></div>
       </div>
 
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20 relative z-10">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative z-10">
         
-        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-6 sm:mb-8">
           <span className="inline-block uppercase tracking-[0.18em] text-sm font-semibold text-nand-orange mb-4">
             Hospitality Support
           </span>

@@ -13,13 +13,13 @@ const FinishingPackages = () => {
   ];
 
   return (
-    <section id="finishing-packages" className="py-16 md:py-20 lg:py-24 bg-nand-navy relative overflow-hidden">
+    <section id="finishing-packages" className="py-10 sm:py-12 lg:py-14 bg-nand-navy relative overflow-hidden">
       {/* Decorative Blur */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-nand-blue/10 rounded-full blur-3xl pointer-events-none"></div>
 
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20 relative z-10">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative z-10">
         
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
           <span className="inline-block uppercase tracking-[0.18em] text-sm font-semibold text-nand-orange mb-4">
             Complete Finishing
           </span>
