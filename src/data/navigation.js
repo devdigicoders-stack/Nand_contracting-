@@ -8,20 +8,16 @@ export const navigation = [
     path: "/about"
   },
   {
-    label: "Contracting",
-    path: "/contracting"
+    label: "Contracting & Construction",
+    path: "/contracting-construction"
   },
   {
-    label: "Renovation & Fit-Out",
-    path: "/renovation-fitout"
+    label: "Facility & Technical Maintenance",
+    path: "/facility-maintenance"
   },
   {
-    label: "Manpower & Hospitality",
-    path: "/manpower-hospitality"
-  },
-  {
-    label: "Projects",
-    path: "/projects"
+    label: "Hospitality & Manpower",
+    path: "/hospitality-manpower"
   },
   {
     label: "Contact",

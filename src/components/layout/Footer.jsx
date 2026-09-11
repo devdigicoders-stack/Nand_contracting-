@@ -12,10 +12,10 @@ const Footer = () => {
     <footer className="bg-nand-navy text-slate-300 border-t border-white/5 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-nand-orange via-[#FFB067] to-transparent opacity-80"></div>
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20 py-12 sm:py-16 lg:py-20">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-8">
           
           {/* COLUMN 01 — COMPANY */}
-          <div className="col-span-2 lg:col-span-1 flex flex-col items-center sm:items-start text-center sm:text-left border-b border-white/5 lg:border-none pb-8 lg:pb-0">
+          <div className="flex flex-col items-center sm:items-start text-center sm:text-left border-b border-white/5 md:border-none pb-8 md:pb-0">
             <Link to="/" className="inline-block mb-6 hover:opacity-90 transition-opacity">
               <img src="/footer_logo.png" alt="NAND Contracting & Hospitality Services" className="h-16 sm:h-20 w-auto object-contain" />
             </Link>
@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
 
           {/* COLUMN 02 — QUICK LINKS */}
-          <div className="col-span-2 lg:col-span-1 flex flex-col items-center sm:items-start text-center sm:text-left pt-6 lg:pt-0 border-t border-white/5 lg:border-none">
+          <div className="flex flex-col items-center sm:items-start text-center sm:text-left pt-6 md:pt-0 border-t border-white/5 md:border-none">
             <h4 className="text-white font-bold mb-5 tracking-wide uppercase text-xs sm:text-sm flex flex-col items-center sm:items-start">
               Quick Links
               <span className="w-8 h-0.5 bg-nand-orange mt-2 rounded-full"></span>
@@ -38,29 +38,26 @@ const Footer = () => {
             <ul className="space-y-3 text-xs sm:text-sm flex flex-col items-center sm:items-start">
               <li><Link to="/" className="hover:text-nand-orange transition-colors">Home</Link></li>
               <li><Link to="/about" className="hover:text-nand-orange transition-colors">About Us</Link></li>
-              <li><Link to="/projects" className="hover:text-nand-orange transition-colors">Projects & Gallery</Link></li>
               <li><Link to="/contact" className="hover:text-nand-orange transition-colors">Contact Us</Link></li>
             </ul>
           </div>
 
           {/* COLUMN 03 — SERVICES */}
-          <div className="col-span-2 lg:col-span-1 flex flex-col items-center sm:items-start text-center sm:text-left pt-6 lg:pt-0 border-t border-white/5 lg:border-none">
+          <div className="flex flex-col items-center sm:items-start text-center sm:text-left pt-6 md:pt-0 border-t border-white/5 md:border-none">
             <h4 className="text-white font-bold mb-5 tracking-wide uppercase text-xs sm:text-sm flex flex-col items-center sm:items-start">
               Services
               <span className="w-8 h-0.5 bg-nand-orange mt-2 rounded-full"></span>
             </h4>
             <ul className="space-y-3 text-xs sm:text-sm flex flex-col items-center sm:items-start">
-              <li><Link to="/contracting" className="hover:text-nand-orange transition-colors">Contracting</Link></li>
-              <li><Link to="/contracting#facility-maintenance" className="hover:text-nand-orange transition-colors">Facility Maintenance</Link></li>
-              <li><Link to="/contracting#technical-maintenance" className="hover:text-nand-orange transition-colors">Technical Maintenance</Link></li>
-              <li><Link to="/renovation-fitout" className="hover:text-nand-orange transition-colors">Renovation & Fit-Out</Link></li>
-              <li><Link to="/manpower-hospitality" className="hover:text-nand-orange transition-colors">Manpower & Hospitality</Link></li>
+              <li><Link to="/contracting-construction" className="hover:text-nand-orange transition-colors">Contracting & Construction</Link></li>
+              <li><Link to="/facility-maintenance" className="hover:text-nand-orange transition-colors">Facility & Technical Maintenance</Link></li>
+              <li><Link to="/hospitality-manpower" className="hover:text-nand-orange transition-colors">Hospitality & Manpower</Link></li>
               <li><Link to="/contact" className="hover:text-nand-orange transition-colors">Emergency Support</Link></li>
             </ul>
           </div>
 
           {/* COLUMN 04 — CONTACT */}
-          <div className="col-span-2 lg:col-span-1 pt-6 lg:pt-0 border-t border-white/5 lg:border-none flex flex-col items-center sm:items-start text-center sm:text-left">
+          <div className="pt-6 md:pt-0 border-t border-white/5 md:border-none flex flex-col items-center sm:items-start text-center sm:text-left">
             <h4 className="text-white font-bold mb-5 tracking-wide uppercase text-xs sm:text-sm flex flex-col items-center sm:items-start">
               Contact
               <span className="w-8 h-0.5 bg-nand-orange mt-2 rounded-full"></span>
@@ -108,7 +105,7 @@ const Footer = () => {
               <p>© {currentYear} NAND Contracting & Hospitality Services. All Rights Reserved.</p>
               <span className="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-slate-700"></span>
               <p>
-                Crafted by <a href="https://digicoders.in" target="_blank" rel="noopener noreferrer" className="text-nand-orange hover:text-[#e66d00] transition-colors font-semibold">Team DigiCoders</a>
+                Designed and Developed by <a href="#" target="_blank" rel="noopener noreferrer" className="text-nand-orange hover:text-[#e66d00] transition-colors font-semibold">Worknest Connect</a>
               </p>
             </div>
             <div className="flex space-x-6">

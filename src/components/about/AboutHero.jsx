@@ -52,7 +52,7 @@ const AboutHero = () => {
           {/* CTAs */}
           <div className="flex flex-row flex-wrap justify-center md:justify-start gap-3 w-full">
             <Link
-              to="/services"
+              to="/contracting-construction"
               className="inline-flex items-center justify-center px-5 py-2.5 md:px-6 md:py-3 text-sm md:text-base bg-gradient-to-r from-nand-blue to-[#56CCF2] text-white font-semibold rounded-md shadow-lg shadow-nand-blue/30 hover:shadow-xl hover:shadow-nand-blue/40 hover:-translate-y-0.5 transition-all flex-1 sm:flex-none"
             >
               Explore Our Services

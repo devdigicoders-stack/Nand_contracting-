@@ -49,7 +49,7 @@ const HeroSection = () => {
               <FiArrowUpRight className="ml-1 sm:ml-2 w-3 h-3 sm:w-5 sm:h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </Link>
             <Link 
-              to="/services" 
+              to="/contracting-construction"
               className="inline-flex items-center justify-center px-3 py-2 sm:px-5 sm:py-3 text-[11px] sm:text-sm md:text-base bg-transparent border border-white/40 text-white font-bold rounded-md hover:bg-white/10 hover:border-white shadow-sm transition-all group"
             >
               Explore Services

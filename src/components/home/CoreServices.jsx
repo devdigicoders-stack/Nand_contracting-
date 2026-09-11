@@ -100,7 +100,7 @@ const CoreServices = () => {
                 </p>
                 
                 <Link 
-                  to="/services" 
+                  to="/contracting-construction" 
                   className={`inline-flex items-center text-sm font-semibold transition-colors duration-300 ${
                     isBlue ? 'text-nand-blue group-hover:text-nand-navy' : 'text-nand-orange group-hover:text-nand-navy'
                   }`}
