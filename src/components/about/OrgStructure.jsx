@@ -3,10 +3,10 @@ import { FiUsers } from 'react-icons/fi';
 
 const OrgStructure = () => {
   return (
-    <section className="py-16 md:py-24 bg-nand-light">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
+    <section className="py-10 sm:py-12 lg:py-14 bg-nand-light">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
           <span className="text-nand-orange font-bold text-sm tracking-widest uppercase mb-3 block">
             Organizational Hierarchy
           </span>
@@ -24,8 +24,8 @@ const OrgStructure = () => {
             
             {/* Level 1: Founder & CEO */}
             <div className="bg-nand-navy text-white px-5 py-2.5 md:px-6 md:py-3 text-sm md:text-base rounded-lg shadow-md border-b-4 border-nand-orange text-center mb-8 relative flex flex-col items-center">
-              <img src="/NAND_Website_Image_Collection/team/sumaya-akter-founder-ceo.png" alt="Sumaya Akter" className="w-14 h-14 rounded-full mb-2 border-2 border-white object-cover shadow-sm"/>
-              <h3 className="font-bold text-lg">Sumaya Akter</h3>
+              <img src="/NAND_Website_Image_Collection/team/Sumaya_Akter_Founder_CEO.jpg" alt="Sumaya Akter" className="w-14 h-14 rounded-full mb-2 border-2 border-white object-cover shadow-sm"/>
+              <h3 className="font-bold text-lg text-white">Sumaya Akter</h3>
               <p className="text-sm text-gray-300">Founder & CEO</p>
               {/* Vertical line down */}
               <div className="absolute top-full left-1/2 w-0.5 h-8 bg-gray-300 -translate-x-1/2"></div>
@@ -33,8 +33,8 @@ const OrgStructure = () => {
 
             {/* Level 2: General Manager */}
             <div className="bg-nand-blue text-white px-5 py-2.5 md:px-6 md:py-3 text-sm md:text-base rounded-lg shadow-md text-center mb-8 relative flex flex-col items-center">
-              <img src="/NAND_Website_Image_Collection/team/pragya-nand-rai-general-manager.png" alt="Pragya Nand Rai" className="w-14 h-14 rounded-full mb-2 border-2 border-white object-cover shadow-sm"/>
-              <h3 className="font-bold text-lg">Pragya Nand Rai</h3>
+              <img src="/NAND_Website_Image_Collection/team/Pragya_Nand_Rai_General_Manager.png" alt="Pragya Nand Rai" className="w-14 h-14 rounded-full mb-2 border-2 border-white object-cover shadow-sm"/>
+              <h3 className="font-bold text-lg text-white">Pragya Nand Rai</h3>
               <p className="text-sm text-blue-100">General Manager</p>
               {/* Vertical line up (connecting) */}
               <div className="absolute bottom-full left-1/2 w-0.5 h-8 bg-gray-300 -translate-x-1/2"></div>

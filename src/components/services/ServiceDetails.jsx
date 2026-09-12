@@ -1,5 +1,5 @@
 import React from 'react';
-import { BsCheck2 } from 'react-icons/bs';
+import { BsCheckCircleFill } from 'react-icons/bs';
 
 const ServiceDetails = () => {
   const servicesData = [
@@ -95,55 +95,87 @@ const ServiceDetails = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-nand-light">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20 space-y-16 lg:space-y-24">
-        {servicesData.map((service, index) => {
-          const isEven = index % 2 === 0;
-          return (
-            <div key={index} className={`flex flex-col lg:flex-row gap-12 lg:gap-16 items-start ${isEven ? '' : 'lg:flex-row-reverse'}`}>
-              
-              {/* Content */}
-              <div className="w-full lg:w-1/2">
-                <div className="flex items-center mb-6">
-                  <span className="text-nand-blue font-bold text-4xl mr-4 opacity-30 font-heading">SERVICE {service.num}</span>
-                  <div className="w-12 h-0.5 bg-nand-orange"></div>
-                </div>
-                
-                <h2 className="text-3xl md:text-4xl font-extrabold text-nand-navy mb-6">
-                  {service.title}
-                </h2>
-                
-                <div className="prose prose-lg text-nand-muted mb-8">
-                  <p className="mb-4">{service.desc}</p>
-                  {service.subtext && <p>{service.subtext}</p>}
-                </div>
-              </div>
+    <section id="service-catalog" className="py-10 sm:py-12 lg:py-14 bg-slate-50/70 border-t border-slate-100 relative">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+        
+        {/* Section Header */}
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-nand-orange/10 border border-nand-orange/20 text-nand-orange text-xs font-bold uppercase tracking-wider mb-3">
+            NAND Capabilities
+          </div>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold tracking-tight text-nand-navy mb-3 leading-tight">
+            Comprehensive Capabilities for Qatar Assets
+          </h2>
+          <p className="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
+            Explore our 8 specialized operational divisions across civil contracting, technical facility care, fit-out renovation and certified workforce solutions.
+          </p>
+        </div>
 
-              {/* List Card */}
-              <div className="w-full lg:w-1/2">
-                <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-8 md:p-10 relative overflow-hidden">
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-nand-orange/5 rounded-bl-full -z-0"></div>
+        {/* Services Rows */}
+        <div className="space-y-8 sm:space-y-10 lg:space-y-12">
+          {servicesData.map((service, index) => {
+            const isEven = index % 2 === 0;
+            return (
+              <div 
+                key={index} 
+                className={`flex flex-col lg:flex-row gap-6 lg:gap-10 items-stretch ${isEven ? '' : 'lg:flex-row-reverse'} p-6 sm:p-8 rounded-3xl bg-white border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300`}
+              >
+                
+                {/* Content Side (50%) */}
+                <div className="w-full lg:w-1/2 flex flex-col justify-center">
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="inline-flex items-center px-2.5 py-1 rounded-md bg-nand-orange/15 text-nand-orange text-xs font-black font-heading uppercase tracking-wider">
+                      Division {service.num}
+                    </span>
+                    <div className="h-0.5 w-12 bg-nand-orange/30"></div>
+                  </div>
                   
-                  <h3 className="text-xl font-bold font-heading text-nand-navy mb-6 relative z-10 border-b border-gray-100 pb-4">
-                    Our Services Include
+                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-heading font-bold text-nand-navy mb-3 leading-tight">
+                    {service.title}
                   </h3>
                   
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4 relative z-10">
-                    {service.list.map((item, idx) => (
-                      <div key={idx} className="flex items-start">
-                        <div className="w-6 h-6 rounded-full bg-nand-blue/10 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                          <BsCheck2 className="w-4 h-4 text-nand-blue" />
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+                    {service.desc}
+                  </p>
+
+                  {service.subtext && (
+                    <p className="text-xs text-slate-500 leading-relaxed italic border-l-2 border-nand-blue pl-3 py-1 bg-blue-50/40 rounded-r-lg">
+                      {service.subtext}
+                    </p>
+                  )}
+                </div>
+
+                {/* Scope Card Side (50%) */}
+                <div className="w-full lg:w-1/2 flex flex-col justify-center">
+                  <div className="bg-slate-50/80 rounded-2xl border border-slate-200/80 p-5 sm:p-6 relative overflow-hidden h-full flex flex-col justify-center">
+                    <div className="flex items-center justify-between pb-3 mb-4 border-b border-slate-200/80">
+                      <h4 className="text-xs sm:text-sm font-bold font-heading text-nand-navy uppercase tracking-wider">
+                        Work Scope & Deliverables
+                      </h4>
+                      <span className="text-[11px] font-bold text-nand-orange bg-nand-orange/10 px-2 py-0.5 rounded">
+                        {service.list.length} Items
+                      </span>
+                    </div>
+                    
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-2.5">
+                      {service.list.map((item, idx) => (
+                        <div 
+                          key={idx} 
+                          className="flex items-center gap-2 p-2 rounded-lg bg-white border border-slate-100 text-slate-700 hover:border-nand-blue/30 transition-colors"
+                        >
+                          <BsCheckCircleFill className="w-3.5 h-3.5 text-nand-blue shrink-0" />
+                          <span className="text-xs font-medium leading-tight truncate">{item}</span>
                         </div>
-                        <span className="text-sm font-medium text-nand-dark leading-snug">{item}</span>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
                 </div>
+                
               </div>
-              
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
+
       </div>
     </section>
   );

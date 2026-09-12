@@ -10,7 +10,7 @@ const SectionHeading = ({ eyebrow, title, description, align = 'left', theme = '
   const isDark = theme === 'dark';
 
   return (
-    <div className={`mb-12 md:mb-16 ${alignClasses[align]} max-w-3xl`}>
+    <div className={`mb-6 sm:mb-8 md:mb-8 sm:mb-10 ${alignClasses[align]} max-w-3xl`}>
       {eyebrow && (
         <span className={`inline-block uppercase tracking-[0.18em] text-sm font-semibold mb-4 ${isDark ? 'text-nand-orange' : 'text-nand-orange'}`}>
           {eyebrow}

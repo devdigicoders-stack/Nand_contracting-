@@ -33,11 +33,11 @@ const PageLoader = () => {
         <div className="absolute inset-2 border-4 border-transparent border-b-nand-navy border-l-nand-blue rounded-full animate-[spin_1.5s_linear_infinite_reverse]"></div>
         
         {/* Logo inside */}
-        <div className="bg-white rounded-full p-2 z-10 w-20 h-20 flex items-center justify-center shadow-sm">
+        <div className="bg-white rounded-full p-2 z-10 w-24 h-24 flex items-center justify-center shadow-md">
           <img 
             src="/logo.png" 
             alt="NAND Loader" 
-            className="w-14 h-auto object-contain animate-pulse" 
+            className="w-18 h-auto max-h-16 object-contain animate-pulse" 
           />
         </div>
       </div>

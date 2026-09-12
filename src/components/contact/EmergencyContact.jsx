@@ -10,7 +10,7 @@ const EmergencyContact = () => {
       <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-2xl transform translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-nand-navy/10 rounded-full blur-2xl transform -translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
 
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20 py-10 md:py-12 relative z-10">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-10 md:py-12 relative z-10">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
           
           <div className="flex items-start lg:items-center max-w-2xl">

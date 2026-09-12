@@ -49,30 +49,38 @@ const Header = () => {
         className={`sticky top-0 z-50 w-full transition-all duration-300 ${
           scrolled 
             ? 'bg-nand-navy/95 backdrop-blur-xl border-b border-white/10 shadow-lg shadow-black/20 py-2' 
-            : 'bg-nand-navy/90 backdrop-blur-md border-b border-white/10 py-4'
+            : 'bg-nand-navy/90 backdrop-blur-md border-b border-white/10 py-3 md:py-3.5'
         }`}
       >
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
-          <div className="flex justify-between items-center h-12 md:h-14 gap-4 xl:gap-8">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-6 xl:px-10 2xl:px-12">
+          <div className="flex justify-between items-center h-14 md:h-16 gap-3 lg:gap-4 xl:gap-6">
             
             {/* LEFT: Logo */}
             <div className="flex-shrink-0 flex items-center z-[60]">
-              <Link to="/" className="relative flex shrink-0 items-center justify-center overflow-hidden rounded-xl bg-white p-1.5 md:p-2 shadow-lg ring-1 ring-white/20 transition-transform duration-300 hover:scale-105" onClick={() => setIsMobileMenuOpen(false)}>
-                <img src="/logo.png" alt="NAND Contracting & Hospitality Services" className="h-10 md:h-12 w-auto object-contain" />
+              <Link 
+                to="/" 
+                className="relative flex shrink-0 items-center justify-center transition-transform duration-300 hover:scale-105" 
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <img 
+                  src="/logo.png" 
+                  alt="NAND Contracting & Hospitality Services" 
+                  className="h-11 sm:h-12 md:h-14 w-auto max-w-[200px] object-contain rounded-lg bg-white p-1 shadow-sm ring-1 ring-white/20" 
+                />
               </Link>
             </div>
 
             {/* CENTER: Navigation (Desktop) */}
-            <nav className="hidden 2xl:flex space-x-1">
+            <nav className="hidden xl:flex items-center justify-center gap-1 2xl:gap-2 flex-1 min-w-0">
               {navigation.map((link) => (
                 <NavLink
                   key={link.label}
                   to={link.path}
                   className={({ isActive }) =>
-                    `whitespace-nowrap px-3 py-2 text-base font-bold rounded-md transition-all duration-200 ${
+                    `whitespace-nowrap inline-flex items-center px-2.5 xl:px-3 2xl:px-4 py-1.5 xl:py-2 text-[13px] xl:text-[14px] 2xl:text-[15px] font-semibold rounded-lg transition-all duration-200 ${
                       isActive 
-                        ? 'text-white bg-white/10 shadow-inner' 
-                        : 'text-slate-300 hover:text-white hover:bg-white/5'
+                        ? 'text-white bg-white/15 shadow-sm font-bold' 
+                        : 'text-slate-200 hover:text-white hover:bg-white/10'
                     }`
                   }
                 >
@@ -82,19 +90,19 @@ const Header = () => {
             </nav>
 
             {/* RIGHT: CTA & Mobile Toggle */}
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-3 xl:space-x-4 shrink-0">
               <Link 
                 to="/contact" 
-                className="hidden sm:inline-flex whitespace-nowrap shrink-0 items-center justify-center px-6 py-2.5 bg-gradient-to-r from-nand-orange to-[#FFB067] text-white text-base font-bold rounded-lg shadow-lg shadow-nand-orange/20 hover:shadow-xl hover:shadow-nand-orange/40 hover:-translate-y-0.5 transition-all group"
+                className="hidden sm:inline-flex items-center justify-center whitespace-nowrap px-4 xl:px-5 2xl:px-6 py-2 xl:py-2.5 bg-gradient-to-r from-nand-orange to-[#FFB067] text-white text-xs xl:text-sm 2xl:text-base font-bold rounded-lg shadow-lg shadow-nand-orange/20 hover:shadow-xl hover:shadow-nand-orange/40 hover:-translate-y-0.5 transition-all group shrink-0"
               >
                 Request a Quote
-                <FiArrowUpRight className="ml-2 w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                <FiArrowUpRight className="ml-1.5 xl:ml-2 w-3.5 h-3.5 xl:w-4 xl:h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </Link>
 
               {/* Mobile menu button */}
               <button
                 type="button"
-                className="2xl:hidden p-2 -mr-2 rounded-md text-slate-300 hover:text-white hover:bg-white/10 focus:outline-none z-[60] relative transition-colors"
+                className="xl:hidden p-2 -mr-2 rounded-md text-slate-300 hover:text-white hover:bg-white/10 focus:outline-none z-[60] relative transition-colors"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 aria-expanded={isMobileMenuOpen}
                 aria-label="Toggle navigation menu"
@@ -113,7 +121,7 @@ const Header = () => {
       {/* MOBILE MENU - Right side drawer */}
       {/* Backdrop */}
       <div 
-        className={`fixed inset-0 bg-black/40 z-50 2xl:hidden transition-opacity duration-300 ${
+        className={`fixed inset-0 bg-black/40 z-50 xl:hidden transition-opacity duration-300 ${
           isMobileMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
         }`}
         onClick={() => setIsMobileMenuOpen(false)}
@@ -122,7 +130,7 @@ const Header = () => {
 
       {/* Drawer */}
       <div 
-        className={`fixed top-0 right-0 h-screen w-[85%] max-w-sm bg-white z-[55] 2xl:hidden flex flex-col shadow-2xl transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 h-screen w-[85%] max-w-sm bg-white z-[55] xl:hidden flex flex-col shadow-2xl transition-transform duration-300 ease-in-out ${
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >

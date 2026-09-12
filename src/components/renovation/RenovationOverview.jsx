@@ -11,8 +11,8 @@ const RenovationOverview = () => {
   ];
 
   return (
-    <section className="py-16 md:py-20 lg:py-24 bg-white">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
+    <section className="py-10 sm:py-12 lg:py-14 bg-white">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
           {/* LEFT: Text Content */}

@@ -53,9 +53,9 @@ const ManpowerRequirementForm = () => {
 
   return (
     <section id="manpower-requirement" className="py-10 md:py-12 lg:py-16 bg-blue-50/50">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         
-        <div className="text-center mb-12">
+        <div className="text-center mb-5 sm:mb-7">
           <span className="inline-block uppercase tracking-[0.18em] text-sm font-semibold text-nand-orange mb-4">
             Need Manpower?
           </span>

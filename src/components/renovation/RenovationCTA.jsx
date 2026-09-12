@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const RenovationCTA = () => {
   return (
-    <section className="relative py-16 md:py-24 bg-nand-navy overflow-hidden">
+    <section className="relative py-10 sm:py-12 lg:py-14 bg-nand-navy overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -16,7 +16,7 @@ const RenovationCTA = () => {
         <div className="absolute inset-0 bg-nand-navy/90 mix-blend-multiply"></div>
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 xl:px-20 text-center">
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 text-center">
         
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-6 leading-tight">
           Planning a Renovation <br className="hidden sm:block"/> or Fit-Out Project?

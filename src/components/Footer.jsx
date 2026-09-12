@@ -9,9 +9,12 @@ const Footer = () => {
     <footer className="footer">
       <div className="container footer-grid">
         <div className="footer-col">
-          <Link to="/" className="footer-logo">
-            <span className="logo-nand text-white">NAND</span>
-            <span className="logo-sub text-white">Contracting & Hospitality</span>
+          <Link to="/" className="footer-logo inline-block mb-4">
+            <img 
+              src="/logo.png" 
+              alt="NAND Contracting & Hospitality" 
+              className="h-16 w-auto max-w-[240px] object-contain rounded-lg bg-white p-1" 
+            />
           </Link>
           <p className="footer-bio">
             Qatar's trusted partner delivering excellence in contracting, facility maintenance, and premium manpower outsourcing.

@@ -1,48 +1,53 @@
 import React from 'react';
 import { BsCheckCircleFill } from 'react-icons/bs';
+import { HiOutlineShieldCheck } from 'react-icons/hi2';
 
 const MissionSection = () => {
   const commitments = [
-    'Delivering quality-focused workmanship',
-    'Understanding and responding to client requirements',
-    'Providing reliable maintenance, technical and workforce support',
-    'Maintaining professional communication throughout every assignment',
-    'Supporting planned and emergency maintenance requirements',
-    'Providing suitable manpower for operational requirements',
-    'Promoting safe and responsible work practices',
-    'Delivering practical solutions within agreed project requirements',
-    'Building long-term professional relationships'
+    'Delivering quality-focused workmanship & durable finishes',
+    'Understanding and responding rapidly to client requirements',
+    'Providing reliable maintenance, MEP & technical support',
+    'Maintaining transparent communication throughout every stage',
+    'Supporting planned maintenance & 24/7 emergency calls',
+    'Providing vetted, skilled manpower for facility operations',
+    'Enforcing strict HSE safety and compliance standards',
+    'Delivering turnkey solutions within agreed timelines',
+    'Building long-term client trust and strategic partnerships'
   ];
 
   return (
-    <section className="py-16 md:py-20 lg:py-24 bg-white">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+    <section className="py-10 sm:py-12 lg:py-14 bg-white overflow-hidden">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
           
           {/* LEFT: Mission Content (7 cols) */}
           <div className="lg:col-span-7">
-            <span className="inline-block uppercase tracking-[0.18em] text-sm font-semibold text-nand-orange mb-4">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-nand-orange/10 border border-nand-orange/20 text-nand-orange text-xs font-bold uppercase tracking-wider mb-3">
               Our Mission
-            </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-nand-navy mb-6">
+            </div>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold tracking-tight text-nand-navy mb-4 leading-tight">
               Delivering Dependable Solutions with Professional Standards
             </h2>
             
-            <p className="text-base lg:text-lg leading-7 text-slate-600 mb-10 pb-10 border-b border-slate-200">
-              Our mission is to provide dependable contracting, maintenance, hospitality and manpower support services that help our clients maintain safe, functional, efficient and professionally managed properties, facilities and operations.
+            <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-6 sm:mb-8 pb-6 sm:pb-8 border-b border-slate-100">
+              Our mission is to provide dependable contracting, technical maintenance, luxury renovation and manpower support services that help clients maintain safe, high-performing and professionally managed properties across Qatar.
             </p>
 
             <div>
-              <h3 className="text-xl font-bold text-nand-navy mb-6 uppercase tracking-wider text-sm">
+              <h3 className="text-xs sm:text-sm font-bold text-nand-navy uppercase tracking-wider mb-4 font-heading flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-nand-orange"></span>
                 We are committed to:
               </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-3.5">
                 {commitments.map((item, index) => {
                   const isBlue = index % 2 === 0;
                   return (
-                    <div key={index} className="flex items-start">
-                      <BsCheckCircleFill className={`w-5 h-5 mr-3 mt-1 flex-shrink-0 ${isBlue ? 'text-nand-blue' : 'text-nand-orange'}`} />
-                      <span className="text-slate-700 text-sm md:text-base leading-snug">{item}</span>
+                    <div 
+                      key={index} 
+                      className="flex items-start gap-2.5 p-2.5 sm:p-3 rounded-xl bg-slate-50 hover:bg-blue-50/50 border border-slate-100 transition-colors"
+                    >
+                      <BsCheckCircleFill className={`w-4 h-4 mt-0.5 shrink-0 ${isBlue ? 'text-nand-blue' : 'text-nand-orange'}`} />
+                      <span className="text-slate-700 text-xs sm:text-sm leading-snug font-medium">{item}</span>
                     </div>
                   );
                 })}
@@ -50,17 +55,26 @@ const MissionSection = () => {
             </div>
           </div>
 
-          {/* RIGHT: Image (5 cols) */}
-          <div className="lg:col-span-5 relative h-full min-h-[500px] hidden lg:block">
-            <div className="absolute inset-0 bg-nand-light rounded-2xl overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-nand-orange/10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
-              <div className="absolute bottom-0 left-0 w-64 h-64 bg-nand-blue/10 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
-              
+          {/* RIGHT: Authentic Photo with Glassmorphic Floating Badge (5 cols) */}
+          <div className="lg:col-span-5 relative mt-6 lg:mt-0">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-100 group">
               <img 
-                src="/NAND_Website_Image_Collection/hero/doha-skyline.jpg" 
-                alt="Our Mission" 
-                className="w-full h-full object-cover relative z-10"
+                src="/NAND_Website_Image_Collection/services/contracting-division.jpg" 
+                alt="NAND Contracting and Engineering Inspection" 
+                className="w-full h-auto object-cover aspect-[4/3] lg:aspect-[4/5] group-hover:scale-105 transition-transform duration-500"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-nand-navy/80 via-transparent to-transparent"></div>
+
+              {/* Floating Quality Assurance Badge */}
+              <div className="absolute bottom-5 left-5 right-5 p-4 rounded-xl bg-white/95 backdrop-blur-md border border-white/40 shadow-xl flex items-center gap-3">
+                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-nand-orange to-[#FFB067] text-white flex items-center justify-center shrink-0 shadow-md">
+                  <HiOutlineShieldCheck className="w-5 h-5" />
+                </div>
+                <div>
+                  <h4 className="text-xs sm:text-sm font-bold text-nand-navy font-heading leading-tight">ISO & QCS Aligned</h4>
+                  <p className="text-[11px] text-slate-500 leading-tight mt-0.5">Strict quality benchmarks for contracting & hospitality across Doha</p>
+                </div>
+              </div>
             </div>
           </div>
 

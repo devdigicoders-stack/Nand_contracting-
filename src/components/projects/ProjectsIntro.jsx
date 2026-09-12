@@ -2,8 +2,8 @@ import React from 'react';
 
 const ProjectsIntro = () => {
   return (
-    <section className="py-16 md:py-20 lg:py-24 bg-white">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
+    <section className="py-10 sm:py-12 lg:py-14 bg-white">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <div className="text-center max-w-4xl mx-auto">
           
           <span className="inline-block uppercase tracking-[0.18em] text-sm font-semibold text-nand-orange mb-4">
