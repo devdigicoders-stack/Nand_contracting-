@@ -47,7 +47,7 @@ const InquiryWrapper = () => {
               <h4 className="font-bold text-nand-navy mb-2">Need quick communication?</h4>
               <p className="text-sm text-slate-600 mb-4">Chat directly with our support team.</p>
               <a 
-                href={`https://wa.me/974${contactInfo.whatsapp}`} 
+                href={`https://wa.me/${contactInfo.whatsappRaw}`} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-5 py-2.5 bg-[#25D366] text-white font-bold rounded hover:bg-[#20bd5a] transition-colors shadow-sm text-sm"

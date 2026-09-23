@@ -6,9 +6,9 @@ import { contactInfo } from '../../data/contactInfo';
 const OfficeLocation = () => {
   const { floor, office, room, building, road, landmark, city, country } = contactInfo.address;
   const fullAddress = `${floor}, ${office}, ${building}, ${road}, ${city} - ${country}`;
-  const mapsSearchQuery = encodeURIComponent(`${building}, ${road}, ${city}, ${country}`);
+  const mapsSearchQuery = "4th+Floor,+Office+405,+Room+09,+Central+Complex,+Near+Doha+Municipality,+B+Ring+Rd,+Doha,+Qatar";
   const mapsEmbedUrl = `https://maps.google.com/maps?q=${mapsSearchQuery}&t=&z=16&ie=UTF8&iwloc=&output=embed`;
-  const mapsDirectUrl = `https://www.google.com/maps/search/?api=1&query=${mapsSearchQuery}`;
+  const mapsDirectUrl = contactInfo.mapsLink;
 
   return (
     <section className="py-10 sm:py-12 lg:py-14 bg-slate-50 border-t border-slate-200">
@@ -45,10 +45,7 @@ const OfficeLocation = () => {
                     {building}
                   </h3>
                   <div className="text-slate-700 text-sm leading-relaxed space-y-1">
-                    <p className="font-semibold text-slate-900">{floor}, {office} <span className="text-slate-400 font-normal">({room})</span></p>
-                    <p>{road}</p>
-                    <p className="text-slate-500 text-xs">{landmark}</p>
-                    <p className="font-bold text-nand-navy">{city} - {country}</p>
+                    <p className="font-medium text-slate-900">{contactInfo.fullAddress}</p>
                   </div>
                 </div>
               </div>
@@ -91,7 +88,7 @@ const OfficeLocation = () => {
                 Get Directions
               </a>
               <a 
-                href={`tel:${contactInfo.phone}`}
+                href={`tel:+${contactInfo.phoneRaw}`}
                 className="inline-flex items-center justify-center px-5 py-3 text-sm bg-white text-nand-navy font-bold rounded-xl border border-slate-300 hover:border-nand-navy hover:bg-slate-50 transition-all shadow-sm flex-1"
               >
                 <HiOutlinePhone className="mr-2 w-4 h-4 text-nand-blue" />
@@ -119,8 +116,7 @@ const OfficeLocation = () => {
                 <HiOutlineMapPin className="w-4 h-4" />
               </div>
               <div className="min-w-0">
-                <div className="text-xs font-bold text-nand-navy truncate">Central Complex, B-Ring Road</div>
-                <div className="text-[11px] text-slate-500 truncate">Office 405, 4th Floor • Doha, Qatar</div>
+                <div className="text-[11px] text-slate-700 truncate">{contactInfo.fullAddress}</div>
               </div>
               <a
                 href={mapsDirectUrl}

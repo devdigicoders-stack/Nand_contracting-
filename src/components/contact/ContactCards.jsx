@@ -9,14 +9,14 @@ const ContactCards = () => {
       title: 'Call Us',
       value: contactInfo.phone,
       icon: <FiPhoneCall className="w-6 h-6" />,
-      action: `tel:${contactInfo.phone}`,
+      action: `tel:+${contactInfo.phoneRaw}`,
       isExternal: false
     },
     {
       title: 'WhatsApp',
       value: contactInfo.whatsapp,
       icon: <FaWhatsapp className="w-6 h-6" />,
-      action: `https://wa.me/974${contactInfo.whatsapp}`,
+      action: `https://wa.me/${contactInfo.whatsappRaw}`,
       isExternal: true
     },
     {

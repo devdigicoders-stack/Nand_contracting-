@@ -35,7 +35,7 @@ const AboutCTA = () => {
                 <FiArrowUpRight className="ml-2 w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </Link>
               <a 
-                href="tel:31175515" 
+                href="tel:+97431175515" 
                 className="w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3.5 text-xs sm:text-sm md:text-base bg-white/10 hover:bg-white/15 text-white font-bold rounded-xl backdrop-blur-md transition-all border border-white/20 hover:-translate-y-0.5 shadow-sm"
               >
                 <FiPhoneCall className="mr-2 w-4 h-4 text-emerald-400" />

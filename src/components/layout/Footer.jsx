@@ -72,7 +72,7 @@ const Footer = () => {
             </h4>
             <ul className="space-y-3.5 text-xs sm:text-sm w-full">
               <li>
-                <a href={`tel:${contactInfo.phone}`} className="flex items-center hover:text-white transition-colors group">
+                <a href={`tel:+${contactInfo.phoneRaw}`} className="flex items-center hover:text-white transition-colors group">
                   <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center mr-3 text-nand-orange group-hover:bg-nand-orange group-hover:text-white transition-colors shrink-0">
                     <FiPhone className="w-4 h-4" />
                   </div>
@@ -80,11 +80,11 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href={`https://wa.me/974${contactInfo.whatsapp}`} target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-white transition-colors group">
+                <a href={`https://wa.me/${contactInfo.whatsappRaw}`} target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-white transition-colors group">
                   <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center mr-3 text-[#25D366] group-hover:bg-[#25D366] group-hover:text-white transition-colors shrink-0">
                     <FaWhatsapp className="w-4 h-4" />
                   </div>
-                  <span>+{contactInfo.whatsapp} (WhatsApp)</span>
+                  <span>{contactInfo.whatsapp} (WhatsApp)</span>
                 </a>
               </li>
               <li>
@@ -96,14 +96,14 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <div className="flex items-start cursor-default">
-                  <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center mr-3 text-nand-orange shrink-0 mt-0.5">
+                <a href={contactInfo.mapsLink} target="_blank" rel="noopener noreferrer" className="flex items-start group hover:text-white transition-colors">
+                  <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center mr-3 text-nand-orange group-hover:bg-nand-orange group-hover:text-white transition-colors shrink-0 mt-0.5">
                     <HiOutlineMapPin className="w-4 h-4" />
                   </div>
-                  <span className="text-slate-400 text-xs leading-relaxed">
-                    {contactInfo.address.floor}, {contactInfo.address.office}, {contactInfo.address.building}, {contactInfo.address.road}, {contactInfo.address.city} - {contactInfo.address.country}
+                  <span className="text-slate-400 text-xs leading-relaxed group-hover:text-white transition-colors">
+                    {contactInfo.fullAddress}
                   </span>
-                </div>
+                </a>
               </li>
             </ul>
           </div>

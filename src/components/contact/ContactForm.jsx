@@ -87,10 +87,10 @@ const ContactForm = ({ inquiryType }) => {
             For urgent maintenance requirements, you can also contact NAND directly by phone or WhatsApp for immediate support.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
-            <a href={`tel:${contactInfo.phone}`} className="flex items-center justify-center px-4 py-2 bg-red-600 text-white rounded font-bold hover:bg-red-700 transition-colors text-sm">
+            <a href={`tel:+${contactInfo.phoneRaw}`} className="flex items-center justify-center px-4 py-2 bg-red-600 text-white rounded font-bold hover:bg-red-700 transition-colors text-sm">
               <FiPhoneCall className="mr-2" /> Call Now
             </a>
-            <a href={`https://wa.me/974${contactInfo.whatsapp}`} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center px-4 py-2 bg-[#25D366] text-white rounded font-bold hover:bg-[#20bd5a] transition-colors text-sm">
+            <a href={`https://wa.me/${contactInfo.whatsappRaw}`} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center px-4 py-2 bg-[#25D366] text-white rounded font-bold hover:bg-[#20bd5a] transition-colors text-sm">
               <FaWhatsapp className="mr-2" /> WhatsApp Now
             </a>
           </div>

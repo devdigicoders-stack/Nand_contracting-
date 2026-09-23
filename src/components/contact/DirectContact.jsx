@@ -25,7 +25,7 @@ const DirectContact = () => {
           <div className="lg:col-span-6 xl:col-span-5 flex flex-col gap-3.5 w-full">
             {/* 3 stacked cards with uniform height and width */}
             <a 
-              href={`tel:${contactInfo.phone}`}
+              href={`tel:+${contactInfo.phoneRaw}`}
               className="flex items-center p-4 sm:p-4.5 bg-white/[0.07] hover:bg-white/[0.12] border border-white/15 hover:border-nand-orange/50 text-white rounded-xl shadow-md transition-all duration-300 group relative overflow-hidden backdrop-blur-md hover:-translate-y-0.5"
             >
               <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-nand-orange"></div>
@@ -39,7 +39,7 @@ const DirectContact = () => {
             </a>
 
             <a 
-              href={`https://wa.me/974${contactInfo.whatsapp}`}
+              href={`https://wa.me/${contactInfo.whatsappRaw}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center p-4 sm:p-4.5 bg-white/[0.07] hover:bg-white/[0.12] border border-white/15 hover:border-[#25D366]/50 text-white rounded-xl shadow-md transition-all duration-300 group relative overflow-hidden backdrop-blur-md hover:-translate-y-0.5"

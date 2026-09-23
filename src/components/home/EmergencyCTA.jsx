@@ -46,11 +46,11 @@ const EmergencyCTA = () => {
             
             <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto shrink-0 justify-center">
               <a 
-                href="tel:31175515" 
+                href="tel:+97431175515" 
                 className="inline-flex items-center justify-center px-6 py-3.5 text-xs sm:text-sm md:text-base font-bold bg-white hover:bg-slate-100 text-nand-navy rounded-xl shadow-lg transition-all duration-300 hover:scale-105"
               >
                 <FiPhoneCall className="mr-2.5 w-4 h-4 text-nand-orange" />
-                Call: 31175515
+                Call: +974 31175515
               </a>
               <a 
                 href="https://wa.me/97431171127" 

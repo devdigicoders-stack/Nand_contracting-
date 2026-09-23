@@ -6,7 +6,7 @@ const WhatsAppButton = () => {
   return (
     <div className="fixed bottom-6 right-6 z-40">
       <a
-        href={`https://wa.me/974${contactInfo.whatsapp}`}
+        href={`https://wa.me/${contactInfo.whatsappRaw}`}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat with NAND on WhatsApp"

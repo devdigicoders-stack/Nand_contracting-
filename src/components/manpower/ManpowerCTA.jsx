@@ -41,7 +41,7 @@ const ManpowerCTA = () => {
             WhatsApp Us
           </a>
           <a 
-            href="tel:31175515" 
+            href="tel:+97431175515" 
             className="inline-flex items-center justify-center px-5 py-2.5 md:px-6 md:py-3 text-sm md:text-base bg-white/10 text-white font-bold rounded-md hover:bg-white/20 backdrop-blur-sm transition-colors border border-white/20 flex-1 sm:flex-none"
           >
             <FiPhoneCall className="mr-2 w-5 h-5" />

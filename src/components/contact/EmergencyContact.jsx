@@ -29,14 +29,14 @@ const EmergencyContact = () => {
 
           <div className="flex flex-row flex-wrap gap-3 flex-shrink-0">
             <a 
-              href={`tel:${contactInfo.phone}`}
+              href={`tel:+${contactInfo.phoneRaw}`}
               className="inline-flex items-center justify-center px-5 py-2.5 md:px-6 md:py-3 text-sm md:text-base bg-nand-navy text-white font-bold rounded-md hover:bg-slate-800 transition-colors shadow-lg"
             >
               <FiPhoneCall className="mr-2 w-5 h-5" />
               Call for Support
             </a>
             <a 
-              href={`https://wa.me/974${contactInfo.whatsapp}`}
+              href={`https://wa.me/${contactInfo.whatsappRaw}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-5 py-2.5 md:px-6 md:py-3 text-sm md:text-base bg-white text-nand-navy font-bold rounded-md hover:bg-slate-100 transition-colors shadow-lg"
