@@ -123,8 +123,8 @@ const Footer = () => {
               </p>
             </div>
             <div className="flex space-x-5">
-              <span className="hover:text-slate-400 transition-colors cursor-pointer">Privacy Policy</span>
-              <span className="hover:text-slate-400 transition-colors cursor-pointer">Terms & Conditions</span>
+              <Link to="/privacy-policy" className="hover:text-slate-400 transition-colors cursor-pointer">Privacy Policy</Link>
+              <Link to="/terms-conditions" className="hover:text-slate-400 transition-colors cursor-pointer">Terms & Conditions</Link>
             </div>
           </div>
         </div>

@@ -11,6 +11,8 @@ import ContractingConstruction from './pages/ContractingConstruction';
 import FacilityMaintenance from './pages/FacilityMaintenance';
 import HospitalityManpower from './pages/HospitalityManpower';
 import Contact from './pages/Contact';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsConditions from './pages/TermsConditions';
 import NotFound from './pages/NotFound';
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
           <Route path="facility-maintenance" element={<FacilityMaintenance />} />
           <Route path="hospitality-manpower" element={<HospitalityManpower />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="terms-conditions" element={<TermsConditions />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
