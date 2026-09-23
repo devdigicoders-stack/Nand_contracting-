@@ -6,13 +6,19 @@ import { FiArrowUpRight, FiPhone } from 'react-icons/fi';
 const AboutHero = () => {
   return (
     <section className="relative min-h-[auto] sm:min-h-[calc(100vh-4rem)] lg:min-h-[calc(100vh-4.5rem)] py-8 sm:py-8 lg:py-10 flex flex-col justify-between overflow-hidden bg-nand-navy">
-      {/* Background with Doha skyline / corporate mood */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
-        style={{ backgroundImage: "url('/NAND_Website_Image_Collection/hero/doha-skyline.jpg')" }}
-      >
-        {/* Dark navy gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#071B2D]/95 via-[#071B2D]/85 to-[#071B2D]/60"></div>
+      {/* Background Video with overlay */}
+      <div className="absolute inset-0 z-0">
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          className="w-full h-full object-cover"
+        >
+          <source src="/NAND_Website_Image_Collection/hero/nand_hero_vid.mp4" type="video/mp4" />
+        </video>
+        {/* Uniform dark overlay for video clarity */}
+        <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 flex-1 flex flex-col justify-center">

@@ -6,13 +6,19 @@ import { MdOutlineSupportAgent } from 'react-icons/md';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[calc(100vh-4rem)] lg:min-h-[calc(100vh-4.5rem)] py-6 sm:py-8 lg:py-10 flex items-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/NAND_Website_Image_Collection/hero/doha-skyline.jpg')" }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-nand-navy/95 via-nand-navy/80 to-transparent"></div>
+    <section className="relative min-h-[70vh] lg:min-h-[75vh] py-6 sm:py-8 lg:py-10 flex items-center overflow-hidden">
+      {/* Background Video with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          className="w-full h-full object-cover"
+        >
+          <source src="/NAND_Website_Image_Collection/hero/nand_hero_vid.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
